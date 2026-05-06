@@ -1,37 +1,32 @@
 # Eye Opacity Detector
 
-Программа для автоматического анализа помутнения роговицы глаза.
+A program for automatic analysis of corneal opacity in eye images.
 
-Проект разработан в рамках исследовательской работы по информатике.
+This project was developed as part of a computer science research project.
 
-## Возможности
+## Features
 
-- сегментация области помутнения роговицы
-- анализ изображения глаза
-- вычисление площади поражения
-- визуализация результата
+* Segmentation of the corneal opacity area
+* Eye image analysis
+* Calculation of the affected area
+* Result visualization
 
-## Используемые технологии
+## Technologies Used
 
-- Python
-- PyTorch
-- OpenCV
-- Tkinter
+* Python
+* PyTorch
+* OpenCV
+* Tkinter
 
-## Структура проекта
+## Project Structure
 
-scripts/train_unet.py  
-обучение модели U-Net
+```text
+scripts/train_unet.py      U-Net model training
+scripts/predict_image.py   Image analysis
+scripts/main.py            Graphical user interface
+scripts/mask_script.py     Image annotation
+```
 
-scripts/predict_image.py  
-анализ изображения
+## Dataset
 
-scripts/main.py  
-графический интерфейс программы
-
-scripts/mask_script.py  
-разметка изображений
-
-## Датасет
-
-Датасет составляет более 500 изображений, не включён в репозиторий из-за большого размера.
+The dataset contains more than 500 images. It is not included in the repository due to its large size.
